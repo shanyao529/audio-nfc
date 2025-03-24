@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+     <html>
+     <head>
+         <title>播放祝福音频</title>
+     </head>
+     <body>
+         <audio id="myAudio" controls autoplay>
+             <source src="未知歌手 - 未知 - 未知.mp3" type="audio/mpeg">
+             您的浏览器不支持音频播放。
+         </audio>
+         <script>
+             // 自动播放（需用户首次交互后生效）
+             document.getElementById('myAudio').play().catch(() => {
+                 // 如果自动播放被阻止，显示提示
+                 alert("请点击页面任意处开始播放！");
+             });
+         </script>
+     </body>
+     </html>
